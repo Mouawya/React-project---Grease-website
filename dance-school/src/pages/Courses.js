@@ -10,7 +10,7 @@ const Courses = () => {
       {value.map((course) => (
         <div className="course-card" key={course.id}>
           <img
-            src={require(`../../public/images/${course.title}.jpg`).default}
+            src={require(`../images/${course.title}.jpg`).default}
             alt="dancers"
             width={300}
             height={300}
