@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Visuelt", sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0.575);
+  min-height: 100vh;
+}
+
+Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-list li {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: large;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid rgb(7, 60, 110);
+  transition: 0.4s;
+}
+
+.courses-navbar {
+  background-color: rgba(255, 105, 36, 0.678);
+  padding: 10px;
+  border-radius: 15px;
+}
+.courses-navbar:hover {
+  box-shadow: 0px 0px 30px -15px rgb(7, 60, 110);
+}
+
+.logo {
+  height: 85px;
+  margin: 3px 0px 0px 25px;
+  padding: 4px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top: 1px solid rgba(235, 108, 49, 0.151);
+  border-right: 1px solid rgba(235, 108, 49, 0.151);
+  border-left: 3px solid rgba(41, 87, 172, 0.6);
+  /* border-bottom: 2px solid rgba(41, 87, 172, 0.6); */
+  border-radius: 2px 60px 2px 2px;
+  box-shadow: 5px 0px 10px 0px rgba(41, 87, 172, 0);
+  z-index: 1;
+  background-color: rgba(235, 108, 49, 0.151);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 1000px;
+  height: 600px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s;
+  transform: scale(0.99);
+}
+
+.slide-active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.right-arrow {
+  position: absolute;
+  font-size: 50px;
+  color: rgba(110, 105, 105, 0.3);
+  cursor: pointer;
+  top: 50%;
+  right: 25px;
+  transition: 0.3s;
+}
+
+.right-arrow:hover {
+  color: rgb(110, 105, 105);
+}
+
+.left-arrow {
+  position: absolute;
+  font-size: 50px;
+  color: rgba(110, 105, 105, 0.3);
+  cursor: pointer;
+  top: 50%;
+  left: 25px;
+  transition: 0.3s;
+}
+
+.left-arrow:hover {
+  color: rgb(110, 105, 105);
+}
+
+.more-about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #d5d8d89a;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.more-about-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(7, 38, 104, 0.863);
+  font-size: 40px;
+  border-bottom: 1px solid rgb(255, 105, 36);
+}
+
+.more-about-cards {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  position: relative;
+}
+
+.more-about-card {
+  width: 270px;
+  text-align: left;
+  margin: 50px;
+  box-shadow: 0px 0px 30px -10px black;
+  color: rgb(75, 74, 74);
+  background-color: white;
+}
+
+.more-about-card > h2,
+p {
+  margin: 10px;
+  padding: 5px;
+}
+
+.buy-ticket-btn {
+  width: 270px;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: rgba(7, 38, 104, 0.863);
+  font-weight: bold;
+  border: 0;
+  background-color: rgba(253, 86, 9, 0.658);
+  cursor: pointer;
+}
+
+.buy-ticket-btn:hover {
+  background: rgb(2, 35, 95);
+  color: #fff;
+}
+.buy-ticket-btn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.buy-ticket-btn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(250, 235, 215, 0.733);
+}
+
+.about > * {
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 10vh;
+}
+
+.about > h1 {
+  color: rgba(47, 95, 199, 0.863);
+}
+
+.about > p {
+  color: rgb(75, 74, 74);
+  font-size: large;
+  text-align: justify;
+}
+
+.courses {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 100vh;
+  background-color: ;
+  width: 50%;
+  margin: auto;
+}
+
+.course-card {
+  margin: 20px;
+  position: relative;
+}
+
+.course-card img {
+  border-radius: 5px;
+}
+
+.course-card:hover img {
+  opacity: 0.3;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 20px 7px rgba(140, 140, 140, 0.83);
+}
+
+.course-card:hover .course-title {
+  opacity: 1;
+  transition: 0.5s ease;
+  background-color: rgb(228, 107, 59);
+}
+
+.course-title {
+  color: rgba(7, 38, 104, 0.863);
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 150px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  background-color: rgba(204, 204, 204, 0.233);
+  padding: 10px;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.course-info {
+  top: 50px;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 7px rgba(140, 140, 140, 0.349);
+}
+
+.course-info-container {
+  align-items: center;
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+
+.course-info-title {
+  background-color: rgba(7, 38, 104, 0.863);
+  color: white;
+  padding: 17px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.course-info-price {
+  text-align: center;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 16px 0 17px 0;
+  margin-bottom: 20px;
+  color: rgb(94, 92, 92);
+}
+
+.course-info-price span {
+  display: block;
+  font-size: 15px;
+  line-height: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+  color: black;
+}
+
+.line {
+  height: 15px;
+  background: #e4e4e4;
+  margin: 0 auto 15px auto;
+}
+
+.course-details {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.course-details > h2 {
+  color: rgba(7, 38, 104, 0.863);
+}
+
+.course-info button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.course-info button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.availability {
+  font-size: 25px;
+  color: rgb(82, 80, 80);
+}
+
+table {
+  width: 300px;
+  color: rgb(75, 74, 74);
+}
+
+table,
+th,
+td {
+  margin: 10px;
+  padding: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-details {
+  padding: 10px;
+}
+.contact-details > * {
+  margin: 8px;
+}
+
+.contact-us {
+  padding: 15px;
+  color: rgb(9, 39, 104);
+  font-size: 40px;
+}
+
+.contact-details > p {
+  color: rgb(49, 49, 49);
+}
+
+.contact-form {
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form > label {
+  color: rgb(49, 49, 49);
+  margin-top: 15px;
+}
+
+form > p {
+  color: red;
+  font-size: 12px;
+}
+
+input,
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-send {
+  width: 25%;
+  cursor: pointer;
+  background-color: rgb(255, 105, 36);
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+.please-contact-us {
+  font-size: 25px;
+  padding-top: 10px;
+  color: rgba(9, 39, 104, 0.8);
+}
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(110, 110, 110, 0.795);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  list-style: none;
+  margin: 15px 15px 30px 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.copyright {
+  margin: 50px 20px 0px 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+.amount {
+  align-items: right;
+  width: 100px;
+}
+
+.amount > button {
+  width: 25px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.basket-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.table-header {
+  background-color: #95a5a638;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  height: 40px;
+}
+
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.basket-table {
+  width: 100%;
+  padding: 20px;
+}
+
+.basket-table th {
+  border: none;
+  padding: 5px 10px 6px;
+  color: #86888b;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.basket-table td {
+  border: none;
+  padding: 10px;
+  color: #3e4042;
+  vertical-align: middle;
+}
+
+.basket-table tbody td button {
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4d4f52;
+}
+
+.price {
+  font-weight: bold;
+  padding-right: 20px;
+  width: 100px;
+  color: #4d4f52;
+}
+
+.checkout-details p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #252627;
+}
+
+.check-out-btn {
+  background-color: rgb(9, 39, 104);
+  border: none;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.checkout-details {
+  text-align: right;
+}
+
+.payment-container {
+  padding: 10px;
+  display: flex;
+
+  justify-content: center;
+}
+.payment-form {
+  margin-top: 20px;
+  padding: 15px;
+  border-style: none;
+  background-color: white;
+  will-change: opacity, transform;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #ffffff;
+  border-radius: 4px;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 11px 15px 11px 0;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(170, 168, 168);
+}
+
+.pay-btn {
+  display: ;
+  font-size: 16px;
+  width: 30%;
+  height: 40px;
+  margin: 40px auto 0;
+  background-color: rgb(255, 105, 36);
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgb(255, 105, 36);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  will-change: transform, background-color, box-shadow;
+  border: none;
+}
+
+.payment-form > button:active {
+  background-color: rgb(180, 73, 24);
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgb(180, 73, 24);
+  transform: scale(0.99);
+}
+
+.payment-form > input {
+  border: 0;
+  border-bottom: 1px solid rgb(170, 168, 168);
+  border-radius: 0;
+  outline: none;
+}
+
+.payment-form > label {
+  color: rgba(129, 127, 127, 0.884);
+}
