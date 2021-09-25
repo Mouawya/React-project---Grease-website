@@ -2,7 +2,7 @@
   "name": "dance-school",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mouawya.github.io/Grease",
+  "homepage": "https://Mouawya.github.io/React-project---Grease-website",
   "dependencies": {
     "@stripe/react-stripe-js": "^1.5.0",
     "@stripe/stripe-js": "^1.18.0",
@@ -22,11 +22,14 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dance-school",
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d dance-school"
+    
   },
   "proxy": "http://localhost:4000/",
   "eslintConfig": {
