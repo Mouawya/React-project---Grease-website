@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/React-project---Grease-website/static/css/main.3bf2432c.chunk.css",
+    "main.js": "/React-project---Grease-website/static/js/main.6eb59d9a.chunk.js",
+    "main.js.map": "/React-project---Grease-website/static/js/main.6eb59d9a.chunk.js.map",
+    "runtime-main.js": "/React-project---Grease-website/static/js/runtime-main.c15e3feb.js",
+    "runtime-main.js.map": "/React-project---Grease-website/static/js/runtime-main.c15e3feb.js.map",
+    "static/js/2.a4e8c82f.chunk.js": "/React-project---Grease-website/static/js/2.a4e8c82f.chunk.js",
+    "static/js/2.a4e8c82f.chunk.js.map": "/React-project---Grease-website/static/js/2.a4e8c82f.chunk.js.map",
+    "static/js/3.b57b6a94.chunk.js": "/React-project---Grease-website/static/js/3.b57b6a94.chunk.js",
+    "static/js/3.b57b6a94.chunk.js.map": "/React-project---Grease-website/static/js/3.b57b6a94.chunk.js.map",
+    "index.html": "/React-project---Grease-website/index.html",
+    "static/css/main.3bf2432c.chunk.css.map": "/React-project---Grease-website/static/css/main.3bf2432c.chunk.css.map",
+    "static/js/2.a4e8c82f.chunk.js.LICENSE.txt": "/React-project---Grease-website/static/js/2.a4e8c82f.chunk.js.LICENSE.txt",
+    "static/media/Ballet.jpg": "/React-project---Grease-website/static/media/Ballet.41f89bac.jpg",
+    "static/media/Contemporary.jpg": "/React-project---Grease-website/static/media/Contemporary.7b3fa85b.jpg",
+    "static/media/Lindy Hop.jpg": "/React-project---Grease-website/static/media/Lindy Hop.25157e71.jpg",
+    "static/media/Live-Music-nights.jpg": "/React-project---Grease-website/static/media/Live-Music-nights.622a4101.jpg",
+    "static/media/Private-Dance-Lessons.jpg": "/React-project---Grease-website/static/media/Private-Dance-Lessons.290c4ddb.jpg",
+    "static/media/Salsa.jpg": "/React-project---Grease-website/static/media/Salsa.ce84d3c1.jpg",
+    "static/media/Solo Jazz.jpg": "/React-project---Grease-website/static/media/Solo Jazz.828e8c5c.jpg",
+    "static/media/dance-festival.jpg": "/React-project---Grease-website/static/media/dance-festival.fd76524c.jpg",
+    "static/media/image1.jpg": "/React-project---Grease-website/static/media/image1.cb70f107.jpg",
+    "static/media/image2.jpeg": "/React-project---Grease-website/static/media/image2.6c1401ee.jpeg",
+    "static/media/image3.jpg": "/React-project---Grease-website/static/media/image3.6626b817.jpg",
+    "static/media/image4.jpg": "/React-project---Grease-website/static/media/image4.7560a47c.jpg",
+    "static/media/image5.jpg": "/React-project---Grease-website/static/media/image5.5c1ea11d.jpg",
+    "static/media/logo.e9e563f7.png": "/React-project---Grease-website/static/media/logo.e9e563f7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c15e3feb.js",
+    "static/js/2.a4e8c82f.chunk.js",
+    "static/css/main.3bf2432c.chunk.css",
+    "static/js/main.6eb59d9a.chunk.js"
+  ]
+}
